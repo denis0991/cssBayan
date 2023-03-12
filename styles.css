@@ -19,3 +19,26 @@ body {
     color: black;
     
 }
+
+.accordion__body {
+    display: none;
+    margin: 30px auto 10px;
+}
+.accordion__input:checked ~ .accordion__body {
+    display: block;
+    
+}
+.accordion__item:hover > .accordion__body {
+    display: block; 
+    
+}
+.accordion__input:checked ~ .plus {
+    transform: rotate(45deg);
+}
+.accordion__input:hover ~ .plus {
+    transform: rotate(45deg);
+}
+.accordion__input:checked + .accordion__text{
+    color: black;
+    
+}
